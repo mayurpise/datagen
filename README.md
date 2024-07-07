@@ -34,11 +34,16 @@ The ability to efficiently read and write files across various file systems is c
 The basic usage of `datagen` is as follows:
 
 ```bash
-./datagen <w|rw> <target_dir> <num_levels> <num_dirs_per_level> <num_files_per_dir> <file_size_kb> <target_level> <num_files_at_target_level>
+./datagen
+Usage: ./datagen <w|rw> <target_dir> <num_levels> <num_dirs_per_level> <num_files_per_dir> <file_size_kb> <target_level> <num_files_at_target_level>
+Usage: ./datagen <r> <target_dir> <test_rounds>
+Note: You can set and export NUM_THREADS, default is hardware concurrency
 ```
 
 - `w`: Write only
-- `rw`: Read and write
+- `rw`: Read and write both
+- `r`: Read only
+- `<test_rounds>`: Used with `r` to read all directory structure multiple rounds and take average
 - `<target_dir>`: The directory where the test will be conducted
 - `<num_levels>`: The depth of directory structure
 - `<num_dirs_per_level>`: The number of directories per level
