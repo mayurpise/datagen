@@ -25,6 +25,8 @@ SOFTWARE.
 
 `datagen` is a versatile command-line tool designed to create complex directory and file structures, allowing for the evaluation of file system performance. The tool can generate a large number of files and directories, simulating realistic usage scenarios to measure read and write performance metrics.
 
+Note: By no means it provides extensive functionality like fio nor it is intended to use instead of fio.
+
 ## Overview
 
 The ability to efficiently read and write files across various file systems is crucial for optimizing your infrastructure. `datagen` helps in performing quick read and write performance tests on different file systems, whether local storage, NFS, SMB, or others.
