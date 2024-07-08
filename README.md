@@ -1,5 +1,3 @@
-MIT License
-
 # Datagen: Introduction and Overview
 
 Efficiently reading and writing files across various file systems is crucial for optimizing your infrastructure. To aid in this, I developed Datagen, a versatile command-line tool designed to create complex directory and file structures. This tool simulates realistic usage scenarios, allowing you to measure read and write performance metrics across different types of file systems.
